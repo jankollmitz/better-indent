@@ -1,0 +1,6 @@
+[
+  {
+    "caption": "Better Indentation: Reindent all lines",
+    "command": "better_reindent"
+  }
+]

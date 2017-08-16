@@ -1,0 +1,6 @@
+[
+  { "keys": ["ctrl+shift+8"], "command": "better_reindent" },
+  { "keys": ["ctrl+shift+9"], "command": "better_reindent", "args": {
+    "selection": "True"
+  } }
+]
