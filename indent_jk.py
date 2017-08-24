@@ -46,7 +46,7 @@ def set_indent_level(view, edit, line, level):
   if view.indentation_level(line.begin()) == level:
     return
   content = view.substr(line).lstrip()
-  indented_content = "  " * max(0, level) + content
+  indented_content = '\t' * max(0, level) + content
   # print(content)
   # print(indented_content)
   view.replace(edit, line, indented_content)
