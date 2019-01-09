@@ -98,7 +98,9 @@ def reindent_all_lines(view, edit):
         row = view.rowcol(region.a)[0] + 1
       else:
         row = view.rowcol(region.a)[0]
-      diff[row] = diff[row] + int(match.group(2))
+      # check if not in the last line
+      if row < len(diff):
+        diff[row] = diff[row] + int(match.group(2))
       # Look for other matches in the rest of the scope
       scope = scope[match.span(0)[1]:]
       match = pattern.search(scope)
